@@ -56,4 +56,11 @@ function validateEmail(email) {
     return re.test(email);
   }
 
-module.exports = sentMail;
+  const test  = (req,res) => {
+      return res.status(200).send({message:"Thanh cong"});
+  }
+
+module.exports = {
+    sentMail:sentMail,
+    test: test
+} ;
