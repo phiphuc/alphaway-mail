@@ -38,7 +38,6 @@ const sentMail = (req, res) => {
             +'<p>Email: '+req.body.email+'<p>'
             +'<p>Company: '+req.body.company+"<p>"
             +'<p>Message: '+req.body.message+"<p>"
-            +'<img'
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
