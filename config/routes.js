@@ -8,7 +8,8 @@
  * https://sailsjs.com/anatomy/config/routes-js
  */
 
- const sentMail = require("../api/controllers/sent-mail");
+ const sent = require("../api/controllers/sent-mail");
 module.exports.routes = {
-    'post /alphaway/sent-mail': sentMail
+    'post /alphaway/sent-mail': sent.sentMail,
+    'get /alphaway/sent-mail': sent.test
 };
