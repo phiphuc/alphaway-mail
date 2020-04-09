@@ -150,7 +150,7 @@ module.exports = {
     cors: {
       allRoutes: true,
       allowOrigins: '*',
-      allowCredentials: true,
+      allowCredentials: false,
     },
 
   },
@@ -337,7 +337,7 @@ module.exports = {
   * this, just try deploying without setting it and see if it works.)       *
   *                                                                         *
   ***************************************************************************/
-   port: 8080,
+   port: 55555,
 
 
 
