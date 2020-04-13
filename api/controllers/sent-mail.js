@@ -29,10 +29,10 @@ const sentMail = (req, res) => {
         }
     });
     let mailOptions = {
-        from: '"tuyen dung Alphaway"'+utils.username, // sender address
+        from: '"Customer enquiries"'+utils.username, // sender address
         to: utils.to, // list of receivers
         subject: subject, // Subject line
-        html: '<h3 style="ext-center">Thông tin tuyển dụng</h3><br/>'
+        html: '<h3 style="ext-center">Customer enquiries</h3><br/>'
             +'<p>Họ tên:'+req.body.name+'<p>'
             +'<p>Số điện thoại: '+req.body.phone+'<p>'
             +'<p>Email: '+req.body.email+'<p>'
